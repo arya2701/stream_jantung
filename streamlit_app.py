@@ -5,8 +5,8 @@ import base64
 
 # membaca model
 try:
-    jantung_model = pickle.load(open('C:/Users/user/Documents/Kuliah/MSIB/Tugas_Akhir Background/Jantung_model.sav', 'rb'))
-    scaler = pickle.load(open('C:/Users/user/Documents/Kuliah/MSIB/Tugas_Akhir Background/scaler.sav', 'rb'))
+    jantung_model = pickle.load(open('Jantung_model.sav', 'rb'))
+    scaler = pickle.load(open('scaler.sav', 'rb'))
 except Exception as e:
     st.error(f"Error loading model or scaler: {e}")
     st.stop()
